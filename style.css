@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./background.jpg) no-repeat center center/ cover;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.822);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-model {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.header {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+}
+
+.header h2 {
+  font-weight: 500;
+  margin: 10px;
+}
+
+.generator {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: white;
+
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.generator span {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.generator p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: black;
+}
+
+.generator > button {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid rgb(24, 24, 24);
+  transition: 0.5s;
+}
+
+button:hover {
+  transition: 0.2s;
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+@media (max-width: 714px) {
+  .box-model {
+    transform: scale(0.8);
+  }
+}
